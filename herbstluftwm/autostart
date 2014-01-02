@@ -140,7 +140,7 @@ hc rule title=htop tag=terminals index=0110
 hc rule title=termtop tag=terminals index=01111
 
 # autorun a few programs in terminals
-pgrep "${term} -T weechat" -f > /dev/null || $term -T weechat -e 'weechat' &
+pgrep "${term} -T weechat" -f > /dev/null || $term -T weechat -e 'weechat-curses' &
 pgrep "${term} -T player" -f > /dev/null || $term -T player -e 'ncmpcpp' &
 pgrep "${term} -T htop" -f > /dev/null || $term -T htop -e 'htop' &
 pgrep "${term} -T termtop" -f > /dev/null || $term -T termtop &
